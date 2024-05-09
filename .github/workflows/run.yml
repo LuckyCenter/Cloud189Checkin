@@ -1,8 +1,7 @@
 name: Cloud189
 on:
   schedule:
-    - cron: '45 1 * * *'
-  workflow_dispatch:
+    - cron: '0 2 * * *'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
