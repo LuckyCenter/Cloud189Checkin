@@ -1,12 +1,8 @@
 name: Cloud check in action
 on:
-  push:
-    branches:
-      - main
-  watch:
-    types: started
   schedule:
-    - cron: 10 3 * * *
+    - cron: '40 9 * * *'
+  workflow_dispatch:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
